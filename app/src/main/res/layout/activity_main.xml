@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity"
+    android:background="#80CBC4">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Seven Steps\n to a Perfect Day"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        style="@style/AllText"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In this quiz, you'll answer seven questions. We'll use that information to help you discover the ingredients that would make up your perfect day.\n\nFeel free to take liberties with your &quot;correct&quot; answers."
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        style="@style/AllText"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="2dp"
+        android:background="#80CBC4" />
+
+    <!-- Question 1 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. What is your first name?"
+        android:textSize="20sp"
+        style="@style/AllText"
+        />
+
+    <EditText
+        android:id="@+id/questionOneResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text"
+        style="@style/AllText"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="2dp"
+        android:background="#80CBC4"
+        />
+
+
+    <!-- Question 2 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. What is the name of the street you grew up on?"
+        android:textSize="20sp"
+        style="@style/AllText"
+        />
+
+
+    <EditText
+        android:id="@+id/questionTwoResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Street name name"
+        android:inputType="textMultiLine"
+        style="@style/AllText"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="2dp"
+        android:background="#80CBC4" />
+
+    <!-- Question 3 -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. In what region do you currently live?"
+        android:textSize="20sp"
+        style="@style/AllText"
+        />
+
+    <RadioGroup
+        android:id="@+id/questionThreeResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/questionThreeResponse1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="East Coast (U.S.)"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionThreeResponse2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="West Coast (U.S.)"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionThreeResponse3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Midwest (U.S.)"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionThreeResponse4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The South (U.S.)"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionThreeResponse5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pacific Northwest (U.S.)"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionThreeResponse6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outside the U.S."
+            style="@style/AllText" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="2dp"
+        android:background="#80CBC4" />
+
+    <!-- Question 4 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. What is your favorite planet?"
+        android:textSize="20sp"
+        style="@style/AllText"
+        />
+
+    <RadioGroup
+        android:id="@+id/questionFourResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/questionFourResponse1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercury"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionFourResponse2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venus"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionFourResponse3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earth"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionFourResponse4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mars"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionFourResponse5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jupiter"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionFourResponse6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturn"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionFourResponse7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uranus"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionFourResponse8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neptune"
+            style="@style/AllText" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="2dp"
+        android:background="#80CBC4" />
+
+    <!-- Question 5 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. How many siblings do you have?"
+        android:textSize="20sp"
+        style="@style/AllText"/>
+
+    <EditText
+        android:id="@+id/questionFiveResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Number"
+        style="@style/AllText"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="2dp"
+        android:background="#80CBC4" />
+
+    <!-- Question 6 -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6. Which of these breakfast foods do you enjoy?"
+        android:textSize="20sp"
+        style="@style/AllText"/>
+
+    <CheckBox
+        android:id="@+id/questionSixResponse1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cereal"
+        style="@style/AllText" />
+
+    <CheckBox
+        android:id="@+id/questionSixResponse2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eggs"
+        style="@style/AllText" />
+
+    <CheckBox
+        android:id="@+id/questionSixResponse3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sausage"
+        style="@style/AllText" />
+
+    <CheckBox
+        android:id="@+id/questionSixResponse4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hashbrowns"
+        style="@style/AllText" />
+
+    <CheckBox
+        android:id="@+id/questionSixResponse5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruit"
+        style="@style/AllText" />
+
+    <CheckBox
+        android:id="@+id/questionSixResponse6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Croissant"
+        style="@style/AllText" />
+
+    <CheckBox
+        android:id="@+id/questionSixResponse7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I hate breakfast."
+        style="@style/AllText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="2dp"
+        android:background="#80CBC4" />
+
+    <!-- Question 7 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7. Of the following well-known personalities, which would you want to get coffee with most?"
+        android:textSize="20sp"
+        style="@style/AllText"/>
+
+    <RadioGroup
+        android:id="@+id/questionSevenResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/questionSevenResponse1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tom Hanks"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionSevenResponse2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reed Hastings"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionSevenResponse3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maggie Haberman"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionSevenResponse4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. Oz"
+            style="@style/AllText" />
+
+        <RadioButton
+            android:id="@+id/questionSevenResponse5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meryl Streep"
+            style="@style/AllText" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:onClick="Submit"/>
+
+    <TextView
+        android:id="@+id/madlibResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/AllText"/>
+
+</LinearLayout>
+</ScrollView>
